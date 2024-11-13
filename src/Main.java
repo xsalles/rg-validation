@@ -14,7 +14,6 @@ public class Main {
         rg = sc.next();
         rg = rg.replaceAll("[^0-9]", "");
 
-        System.out.println(rg.length());
 
         for (int i = 0; i < 8; i++) {
             sum += (Character.getNumericValue(rg.charAt(i)) * size[i]);
