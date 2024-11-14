@@ -19,10 +19,12 @@ public class Main {
             sum += (Character.getNumericValue(rg.charAt(i)) * size[i]);
         }
 
-        digit = 11 - (sum % 11);
+        digit = sum % 11;
 
-        if (digit >= 10 || digit <= 2) {
+        if (digit <= 2) {
             digit = 0;
+        } else{
+            digit = 11 - digit;
         }
 
         if (digit != Character.getNumericValue(rg.charAt(8))
